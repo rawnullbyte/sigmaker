@@ -1,12 +1,15 @@
 #pragma once
 #define NOMINMAX
+#ifdef _WIN32
 #include <Windows.h>
+#endif
 #include <expected>
 #include <string>
 #include <sstream>
 #include <format>
 #include <vector>
 
+#include <bytes.hpp>
 
 #include "Version.h"
 #include "Plugin.h"
